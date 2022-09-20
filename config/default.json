@@ -1,0 +1,9 @@
+{
+    "myConn": {
+      "dbConfig": {
+        "host": "localhost",
+        "port": 5984,
+        "dbName": "mongodb+srv://dsingh197:anbk0ButpAna0Ayv@cluster0.tao9fuo.mongodb.net/?retryWrites=true&w=majority"
+      }
+    }
+  }

@@ -1,10 +1,12 @@
 const express = require('express');
 const app = express();
+const config = require('config');
 
 const userRouter = require('./Routes/user')
+const dbConfig = config.get('myConn.dbConfig.dbName');
 
 const mongoose = require("mongoose");
-mongoose.connect("mongodb+srv://dsingh197:anbk0ButpAna0Ayv@cluster0.tao9fuo.mongodb.net/?retryWrites=true&w=majority", {
+mongoose.connect(dbConfig, {
    useNewUrlParser: true,
    useUnifiedTopology: true
 })
