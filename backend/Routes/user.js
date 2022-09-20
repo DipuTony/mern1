@@ -21,7 +21,7 @@ router.post('/', (req, res, next) => {
         console.log("Save Succesfully", result);
 
         res.status(200).json({
-            message: result
+            message: "Data Added", result
         })
 
     }).catch(err => {
